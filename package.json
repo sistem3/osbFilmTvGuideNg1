@@ -1,0 +1,11 @@
+{
+  "name":"osbTvFilmGuide",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-html2js": "^0.2.7",
+    "grunt-serve": "^0.1.6",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0"
+  }
+}

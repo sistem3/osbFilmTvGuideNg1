@@ -1,0 +1,39 @@
+{
+  "name": "osbTvFilmGuide",
+  "version": "0.0.1",
+  "authors": [
+    "Ben Burton <sistematic3@yahoo.co.uk>"
+  ],
+  "description": "Angular JS Directive for displaying Film and TV Shows",
+  "dependencies": {
+    "angular": ">=1.2.*",
+    "bootstrap-sass-official": "~3.1.1",
+    "bootstrap": "~3.1.1",
+    "font-awesome": ">=4.1.0",
+    "angular-xml": "~2.0.1",
+    "angular-sanitize": "~1.4.8",
+    "angular-local-storage": "~0.2.3"
+  },
+  "main": [
+    "./dist/osbNewsFeedReader.directive.js",
+    "./dist/osbNewsFeedReader.js",
+    "./dist/osbNewsFeedReader.css",
+    "./dist/osbNewsFeedReader.css.map"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".gitignore",
+    "Gruntfile.js",
+    "*.json",
+    "*.md",
+    "/src/*",
+    "/node_modules/*"
+  ]
+}

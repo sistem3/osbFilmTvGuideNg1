@@ -1,0 +1,90 @@
+.filmTvGuide {
+  width: 100%; }
+  .filmTvGuide__listings {
+    position: relative; }
+    .filmTvGuide__listings .favouriteBtn:hover {
+      color: #E800DC; }
+      .filmTvGuide__listings .favouriteBtn:hover > i {
+        color: #E800DC; }
+    .filmTvGuide__listings .favouriteActive {
+      color: #E800DC; }
+      .filmTvGuide__listings .favouriteActive > i {
+        color: #E800DC; }
+    .filmTvGuide__listings .watchedBtn:hover {
+      color: #00AAF2; }
+      .filmTvGuide__listings .watchedBtn:hover > i {
+        color: #00AAF2; }
+    .filmTvGuide__listings .watchedActive {
+      color: #00AAF2; }
+      .filmTvGuide__listings .watchedActive > i {
+        color: #00AAF2; }
+    .filmTvGuide__listings .infoBtn:hover {
+      color: #3B62FF; }
+    .filmTvGuide__listings > ul li {
+      position: relative;
+      margin-bottom: 20px; }
+      .filmTvGuide__listings > ul li .filmTvGuide__listings--nav {
+        width: 90%;
+        min-height: 50px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -45%;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        transition: opacity 0.5s; }
+        .filmTvGuide__listings > ul li .filmTvGuide__listings--nav > a {
+          font-size: 30px;
+          color: #FFF;
+          position: relative;
+          top: 10px;
+          margin-right: 10px;
+          float: right; }
+      .filmTvGuide__listings > ul li > h2 {
+        position: absolute;
+        top: 0;
+        left: 0; }
+    .filmTvGuide__listings > ul li:hover .filmTvGuide__listings--nav {
+      opacity: 1; }
+  .filmTvGuide__modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000; }
+    .filmTvGuide__modal .img-responsive {
+      margin-top: 20px; }
+    .filmTvGuide__modal--closeBtn {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background: #000;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      z-index: 2; }
+      .filmTvGuide__modal--closeBtn > i {
+        font-size: 21px;
+        color: #FFF;
+        position: relative;
+        left: 4px;
+        top: 1px; }
+    .filmTvGuide__modal > img {
+      width: 100%;
+      height: auto;
+      opacity: 0.4; }
+    .filmTvGuide__modal--content {
+      width: 80%;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      margin-left: -40%;
+      background: #FFF;
+      color: #000;
+      padding-bottom: 20px;
+      z-index: 1; }
+
+/*# sourceMappingURL=osbTvFilmGuide.css.map */
