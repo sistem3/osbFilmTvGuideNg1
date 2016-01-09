@@ -30,7 +30,10 @@
 <script src="dist/src/osbNewsFeedReaderTemplate.js"></script>-->
 <script>
     'use strict';
-    angular.module('osbFilmTvGuide', ['ngSanitize', 'LocalStorageModule', 'sistem3.osb-film-tv-guide']);
+    angular.module('osbFilmTvGuide', ['ngSanitize', 'LocalStorageModule', 'sistem3.osb-film-tv-guide'])
+            .config(function (localStorageServiceProvider) {
+                localStorageServiceProvider.setPrefix('osbFilmTvGuide');
+            });
 </script>
 </body>
 
