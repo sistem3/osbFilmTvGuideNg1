@@ -1,0 +1,78 @@
+.filmTvGuide__listings {
+  position: relative;
+
+  .favouriteBtn:hover {
+    color: $purple-pizzazz;
+
+    > i {
+      color: $purple-pizzazz;
+    }
+  }
+
+  .favouriteActive {
+    color: $purple-pizzazz;
+
+    > i {
+      color: $purple-pizzazz;
+    }
+  }
+
+  .watchedBtn:hover {
+    color: $cerulean;
+
+    > i {
+      color: $cerulean;
+    }
+  }
+
+  .watchedActive {
+    color: $cerulean;
+
+    > i {
+      color: $cerulean;
+    }
+  }
+
+  .infoBtn:hover {
+    color: #3B62FF;
+  }
+
+  > ul li {
+    position: relative;
+    margin-bottom: 20px;
+
+    .filmTvGuide__listings--nav {
+      width: 90%;
+      min-height: 50px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -45%;
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+
+      > a {
+        font-size: 30px;
+        color: $color-white;
+        position: relative;
+        top: 10px;
+        margin-right: 10px;
+        float: right;
+      }
+    }
+
+    > h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  > ul li:hover {
+    .filmTvGuide__listings--nav {
+      opacity: 1;
+    }
+  }
+}
