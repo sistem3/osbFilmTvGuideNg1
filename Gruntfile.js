@@ -23,9 +23,16 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      scripts: {
+      templates: {
         files: ['src/**/*.html'],
         tasks: ['html2js'],
+        options: {
+          spawn: false
+        }
+      },
+      styles: {
+        files: ['src/scss/**/*.scss'],
+        tasks: ['sass'],
         options: {
           spawn: false
         }
