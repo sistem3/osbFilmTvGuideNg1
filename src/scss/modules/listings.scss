@@ -37,17 +37,29 @@
     color: #3B62FF;
   }
 
+  > ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
   > ul li {
     position: relative;
-    margin-bottom: 20px;
+    box-sizing: border-box;
+    -webkit-flex: 1 1 33.333%;
+    flex: 1 1 33.333%;
 
     .filmTvGuide__listings--nav {
-      width: 90%;
+      width: 100%;
       min-height: 60px;
       position: absolute;
       top: 0;
       left: 50%;
-      margin-left: -45%;
+      margin-left: -50%;
       background-color: rgba(0, 0, 0, 0.7);
       opacity: 0;
       -webkit-transition: opacity 0.5s;
