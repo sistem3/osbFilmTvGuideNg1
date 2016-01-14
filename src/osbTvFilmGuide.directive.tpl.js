@@ -4,7 +4,7 @@ angular.module("osbTvFilmGuide.tpl.html", []).run(["$templateCache", function($t
   $templateCache.put("osbTvFilmGuide.tpl.html",
     "<div class=\"filmTvGuide\">\n" +
     "    <header class=\"container\">\n" +
-    "        <h1>TV/Movie Guide</h1>\n" +
+    "        <h1><i class=\"fa fa-video-camera\"></i> Film/TV Guide</h1>\n" +
     "        <p>Powered by TMDb</p>\n" +
     "        <nav>\n" +
     "            <ul class=\"list-unstyled list-inline\">\n" +
@@ -24,8 +24,7 @@ angular.module("osbTvFilmGuide.tpl.html", []).run(["$templateCache", function($t
     "    </header>\n" +
     "    <section class=\"filmTvGuide__listings\">\n" +
     "        <ul class=\"list-unstyled\">\n" +
-    "            <li ng-repeat=\"items in filmTvGuide.listings\" class=\"col-xs-12 col-sm-6 col-md-3\">\n" +
-    "                <!--<h2 ng-bind=\"items.title\"></h2>-->\n" +
+    "            <li ng-repeat=\"items in filmTvGuide.listings\">\n" +
     "                <img ng-src=\"http://image.tmdb.org/t/p/w500{{items.poster_path}}\" class=\"img-responsive\" title=\"{{items.title}}\" />\n" +
     "                <div id=\"{{items.id}}\" class=\"filmTvGuide__listings--nav\">\n" +
     "                    <a title=\"More Info\" class=\"infoBtn\" ng-click=\"filmTvGuide.getDetails(filmTvGuide.section, items.id)\"><i class=\"fa fa-info-circle\"></i></a>\n" +

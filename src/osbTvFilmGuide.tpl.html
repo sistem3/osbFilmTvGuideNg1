@@ -1,6 +1,6 @@
 <div class="filmTvGuide">
     <header class="container">
-        <h1>TV/Movie Guide</h1>
+        <h1><i class="fa fa-video-camera"></i> Film/TV Guide</h1>
         <p>Powered by TMDb</p>
         <nav>
             <ul class="list-unstyled list-inline">
@@ -20,8 +20,7 @@
     </header>
     <section class="filmTvGuide__listings">
         <ul class="list-unstyled">
-            <li ng-repeat="items in filmTvGuide.listings" class="col-xs-12 col-sm-6 col-md-3">
-                <!--<h2 ng-bind="items.title"></h2>-->
+            <li ng-repeat="items in filmTvGuide.listings">
                 <img ng-src="http://image.tmdb.org/t/p/w500{{items.poster_path}}" class="img-responsive" title="{{items.title}}" />
                 <div id="{{items.id}}" class="filmTvGuide__listings--nav">
                     <a title="More Info" class="infoBtn" ng-click="filmTvGuide.getDetails(filmTvGuide.section, items.id)"><i class="fa fa-info-circle"></i></a>
