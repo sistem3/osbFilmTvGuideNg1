@@ -33,6 +33,12 @@ angular.module("osbTvFilmGuide.tpl.html", []).run(["$templateCache", function($t
     "                </div>\n" +
     "            </li>\n" +
     "        </ul>\n" +
+    "        <div id=\"filmLoader\">\n" +
+    "            <div>\n" +
+    "                <i class=\"fa fa-spinner fa-spin\"></i>\n" +
+    "                <p>Loading...</p>\n" +
+    "            </div>\n" +
+    "        </div>\n" +
     "    </section>\n" +
     "    <div class=\"clearfix\"></div>\n" +
     "    <section class=\"filmTvGuide__modal\" ng-if=\"filmTvGuide.modal.show\">\n" +

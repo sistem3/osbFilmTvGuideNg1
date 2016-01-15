@@ -16,6 +16,17 @@
   .filmTvGuide .btn-primary:focus {
     outline: none; }
 
+#filmLoader {
+  width: 100%;
+  min-height: 90px;
+  display: block; }
+  #filmLoader div {
+    width: 70px;
+    text-align: center;
+    margin: 0 auto; }
+    #filmLoader div i {
+      font-size: 30px; }
+
 .filmTvGuide__listings {
   position: relative; }
   .filmTvGuide__listings .favouriteBtn:hover {
@@ -47,7 +58,8 @@
     position: relative;
     box-sizing: border-box;
     -webkit-flex: 1 1 33.333%;
-    flex: 1 1 33.333%; }
+    flex: 1 1 33.333%;
+    background-color: #000; }
     .filmTvGuide__listings > ul li .filmTvGuide__listings--nav {
       width: 100%;
       min-height: 60px;

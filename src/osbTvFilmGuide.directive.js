@@ -33,6 +33,7 @@ angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
         $scope.filmTvGuide.user = {};
         $scope.filmTvGuide.user.favourites = [];
         $scope.filmTvGuide.user.watched = [];
+
         // Main Get Data function
         $scope.filmTvGuide.getData = function(section, searchTerm) {
           //console.log(section + '/' + searchTerm);
@@ -48,6 +49,23 @@ angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
                 angular.forEach($scope.filmTvGuide.user.watched, function(value, key) {
                   $scope.filmTvGuide.updateFavWatched('watched', value.id);
                 });
+                var controller = new ScrollMagic.Controller();
+
+                var scene = new ScrollMagic.Scene({triggerElement: '.filmTvGuide__listings #filmLoader', triggerHook: 'onEnter'})
+                    .addTo(controller)
+                    .on('enter', function (e) {
+                      console.log('Blah');
+                      console.log(e);
+                      if (!element.find('#filmLoader').hasClass('active')) {
+                        element.find('#filmLoader').addClass('active');
+                       if (console){
+                        console.log('loading new items');
+                       }
+                       // Load
+                       }
+                    });
+                scene.update();
+
               }, 500);
             });
         };

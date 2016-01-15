@@ -12,7 +12,8 @@
     "font-awesome": ">=4.1.0",
     "angular-xml": "~2.0.1",
     "angular-sanitize": "~1.4.8",
-    "angular-local-storage": "~0.2.3"
+    "angular-local-storage": "~0.2.3",
+    "scrollmagic": "~2.0.5"
   },
   "main": [
     "./dist/osbNewsFeedReader.directive.js",
