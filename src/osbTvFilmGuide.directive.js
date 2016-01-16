@@ -16,6 +16,7 @@ angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
         $scope.filmTvGuide.defaults.apiKey = '892ae99b0451fed76a0ece0a8d0c1414';
         $scope.filmTvGuide.defaults.section = 'movie';
         $scope.filmTvGuide.defaults.searchTerm = 'popular';
+        $scope.filmTvGuide.defaults.pageNumber = 1;
         // Setting up Nav array
         $scope.filmTvGuide.sections = [
           {name: 'Popular movies', section: 'movie', searchTerm: 'popular', icon: 'fa-film'},
@@ -33,10 +34,10 @@ angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
         $scope.filmTvGuide.user = {};
         $scope.filmTvGuide.user.favourites = [];
         $scope.filmTvGuide.user.watched = [];
-
         // Main Get Data function
         $scope.filmTvGuide.getData = function(section, searchTerm) {
           //console.log(section + '/' + searchTerm);
+          $scope.filmTvGuide.defaults.pageNumber = 1;
           $scope.filmTvGuide.section = section;
           $http.get($scope.filmTvGuide.defaults.baseUrl + section + '/' + searchTerm + '?api_key=' + $scope.filmTvGuide.defaults.apiKey)
             .success(function(data) {
@@ -54,20 +55,28 @@ angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
                 var scene = new ScrollMagic.Scene({triggerElement: '.filmTvGuide__listings #filmLoader', triggerHook: 'onEnter'})
                     .addTo(controller)
                     .on('enter', function (e) {
-                      console.log('Blah');
-                      console.log(e);
                       if (!element.find('#filmLoader').hasClass('active')) {
-                        element.find('#filmLoader').addClass('active');
-                       if (console){
-                        console.log('loading new items');
-                       }
-                       // Load
+                         element.find('#filmLoader').addClass('active');
+                         $scope.filmTvGuide.getMoreData();
                        }
                     });
                 scene.update();
 
               }, 500);
             });
+        };
+        // Main Get Data function
+        $scope.filmTvGuide.getMoreData = function() {
+          element.find('#filmLoader').removeClass('active');
+          $scope.filmTvGuide.defaults.pageNumber += 1;
+          console.log($scope.filmTvGuide.defaults.pageNumber);
+          $http.get($scope.filmTvGuide.defaults.baseUrl + $scope.filmTvGuide.defaults.section + '/' + $scope.filmTvGuide.defaults.searchTerm + '?page=' + $scope.filmTvGuide.defaults.pageNumber + '&api_key=' + $scope.filmTvGuide.defaults.apiKey)
+              .success(function(data) {
+                angular.forEach(data.results, function(key, value) {
+                  $scope.filmTvGuide.listings.push(key);
+                });
+                element.find('#filmLoader').removeClass('active');
+              });
         };
         // Get further details function
         $scope.filmTvGuide.getDetails = function(section, searchTerm) {
