@@ -19,11 +19,14 @@
 #filmLoader {
   width: 100%;
   min-height: 90px;
-  display: block; }
+  display: block;
+  position: absolute;
+  top: 50%; }
   #filmLoader div {
     width: 70px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: #FFF; }
     #filmLoader div i {
       font-size: 30px; }
 
