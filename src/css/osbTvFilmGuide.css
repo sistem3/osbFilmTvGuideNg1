@@ -60,9 +60,17 @@
   .filmTvGuide__listings > ul li {
     position: relative;
     box-sizing: border-box;
-    -webkit-flex: 1 1 33.333%;
-    flex: 1 1 33.333%;
+    -webkit-flex: 1 1 25%;
+    flex: 1 1 25%;
     background-color: #000; }
+    @media (max-width: 990px) {
+      .filmTvGuide__listings > ul li {
+        -webkit-flex: 1 1 33.333%;
+        flex: 1 1 33.333%; } }
+    @media (max-width: 640px) {
+      .filmTvGuide__listings > ul li {
+        -webkit-flex: 1 1 50%;
+        flex: 1 1 50%; } }
     .filmTvGuide__listings > ul li .filmTvGuide__listings--nav {
       width: 100%;
       min-height: 60px;

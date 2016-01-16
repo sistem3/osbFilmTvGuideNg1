@@ -50,9 +50,19 @@
   > ul li {
     position: relative;
     box-sizing: border-box;
-    -webkit-flex: 1 1 33.333%;
-    flex: 1 1 33.333%;
+    -webkit-flex: 1 1 25%;
+    flex: 1 1 25%;
     background-color: $color-black;
+    
+    @media (max-width: $breakpoint-medium) {
+      -webkit-flex: 1 1 33.333%;
+      flex: 1 1 33.333%;
+    }
+
+    @media (max-width: $breakpoint-x-small) {
+      -webkit-flex: 1 1 50%;
+      flex: 1 1 50%;
+    }
 
     .filmTvGuide__listings--nav {
       width: 100%;
