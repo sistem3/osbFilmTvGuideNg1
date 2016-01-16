@@ -32,13 +32,15 @@ angular.module("osbTvFilmGuide.tpl.html", []).run(["$templateCache", function($t
     "                    <a title=\"Add to Favourite\" class=\"favouriteBtn\" ng-click=\"filmTvGuide.addFavourite(filmTvGuide.section, items.id)\"><i class=\"fa fa-heart\"></i></a>\n" +
     "                </div>\n" +
     "            </li>\n" +
+    "            <li>\n" +
+    "                <div id=\"filmLoader\">\n" +
+    "                    <div>\n" +
+    "                        <i class=\"fa fa-spinner fa-spin\"></i>\n" +
+    "                        <p>Loading...</p>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "            </li>\n" +
     "        </ul>\n" +
-    "        <div id=\"filmLoader\">\n" +
-    "            <div>\n" +
-    "                <i class=\"fa fa-spinner fa-spin\"></i>\n" +
-    "                <p>Loading...</p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
     "    </section>\n" +
     "    <div class=\"clearfix\"></div>\n" +
     "    <section class=\"filmTvGuide__modal\" ng-if=\"filmTvGuide.modal.show\">\n" +

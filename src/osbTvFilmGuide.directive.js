@@ -39,6 +39,7 @@ angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
           //console.log(section + '/' + searchTerm);
           $scope.filmTvGuide.defaults.pageNumber = 1;
           $scope.filmTvGuide.section = section;
+          $scope.filmTvGuide.defaults.section = section;
           $http.get($scope.filmTvGuide.defaults.baseUrl + section + '/' + searchTerm + '?api_key=' + $scope.filmTvGuide.defaults.apiKey)
             .success(function(data) {
               //console.log(data);

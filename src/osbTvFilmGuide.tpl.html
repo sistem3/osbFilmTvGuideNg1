@@ -28,13 +28,15 @@
                     <a title="Add to Favourite" class="favouriteBtn" ng-click="filmTvGuide.addFavourite(filmTvGuide.section, items.id)"><i class="fa fa-heart"></i></a>
                 </div>
             </li>
+            <li>
+                <div id="filmLoader">
+                    <div>
+                        <i class="fa fa-spinner fa-spin"></i>
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </li>
         </ul>
-        <div id="filmLoader">
-            <div>
-                <i class="fa fa-spinner fa-spin"></i>
-                <p>Loading...</p>
-            </div>
-        </div>
     </section>
     <div class="clearfix"></div>
     <section class="filmTvGuide__modal" ng-if="filmTvGuide.modal.show">
