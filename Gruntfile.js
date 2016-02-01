@@ -9,7 +9,7 @@ module.exports = function (grunt) {
       },
       main: {
         src: ['src/**/*.tpl.html'],
-        dest: 'src/osbTvFilmGuide.directive.tpl.js'
+        dest: 'src/osbFilmTvGuide.directive.tpl.js'
       }
     },
     sass: {
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'src/css/osbTvFilmGuide.css': 'src/scss/osbTvFilmGuide.scss'
+          'src/css/osbFilmTvGuide.css': 'src/scss/osbFilmTvGuide.scss'
         }
       }
     },

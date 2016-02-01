@@ -3,7 +3,7 @@
 angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
   .directive('osbTvFilmGuide', ['$http', '$window', 'localStorageService', function ($http, $window, localStorageService) {
     return {
-      templateUrl: 'osbTvFilmGuide.tpl.html',
+      templateUrl: 'osbFilmTvGuide.tpl.html',
       restrict: 'EA',
       link: function ($scope, element, attrs) {
         //console.log('Adding TV Film Guide');

@@ -1,6 +1,6 @@
 {
-  "name":"osbTvFilmGuide",
-  "version": "0.0.2",
+  "name":"osbFilmTvGuide",
+  "version": "0.0.3",
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-contrib-concat": "^0.5.1",
