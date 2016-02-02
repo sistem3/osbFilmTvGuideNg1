@@ -16,10 +16,8 @@
     "scrollmagic": "~2.0.5"
   },
   "main": [
-    "./dist/osbNewsFeedReader.directive.js",
-    "./dist/osbNewsFeedReader.js",
-    "./dist/osbNewsFeedReader.css",
-    "./dist/osbNewsFeedReader.css.map"
+    "./dist/osbFilmTvGuide.js",
+    "./dist/osbFilmTvGuide.css"
   ],
   "moduleType": [
     "node"

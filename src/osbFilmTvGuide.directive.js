@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sistem3.osb-film-tv-guide', ['osb-film-tv-guide-template'])
-  .directive('osbTvFilmGuide', ['$http', '$window', 'localStorageService', function ($http, $window, localStorageService) {
+  .directive('osbFilmTvGuide', ['$http', '$window', 'localStorageService', function ($http, $window, localStorageService) {
     return {
       templateUrl: 'osbFilmTvGuide.tpl.html',
       restrict: 'EA',
