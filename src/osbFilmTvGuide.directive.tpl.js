@@ -1,7 +1,7 @@
-angular.module('osb-film-tv-guide-template', ['osbTvFilmGuide.tpl.html']);
+angular.module('osb-film-tv-guide-template', ['osbFilmTvGuide.tpl.html']);
 
-angular.module("osbTvFilmGuide.tpl.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("osbTvFilmGuide.tpl.html",
+angular.module("osbFilmTvGuide.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("osbFilmTvGuide.tpl.html",
     "<div class=\"filmTvGuide\">\n" +
     "    <header class=\"container\">\n" +
     "        <h1><i class=\"fa fa-video-camera\"></i> Film/TV Guide</h1>\n" +
