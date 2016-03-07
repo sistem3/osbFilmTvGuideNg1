@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "osbTvFilmGuide.css",
+	"file": "osbFilmTvGuide.css",
 	"sources": [
-		"../scss/osbTvFilmGuide.scss",
+		"../scss/osbFilmTvGuide.scss",
 		"../scss/theme/settings.scss",
 		"../scss/theme/base.scss",
 		"../scss/theme/colours.scss",
